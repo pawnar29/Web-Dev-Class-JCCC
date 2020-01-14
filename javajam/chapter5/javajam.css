@@ -1,0 +1,43 @@
+/* Narayana Venkobasah Due 3/3/2016 */
+body
+{
+	background-color: #F5F5DC;
+	font-family: Verdana, Arial, sans-serif;
+}
+nav
+{
+	font-weight: bold;
+}
+nav a
+{
+	text-decoration: none;
+}
+h1, h2
+{
+	font-family: Georgia, "Times New Roman", serif;
+}
+h3
+{
+	background-color: #E6D6A9;
+	text-transform: uppercase;
+}
+dt
+{
+	font-weight: bold;
+}
+ul
+{
+	list-style-image: url(marker.gif);
+}
+header
+{
+	background-color: #D2B48C;
+}
+footer
+{
+	background-color: #D2B48C;
+	color: #000000;
+	font-size: .60em;
+	font-style: italic;
+	text-align: center;
+}
