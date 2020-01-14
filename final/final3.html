@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<!--Narayana Venkobasah Due May 12, 2016 Practices of HTML-->
+<html lang="en">
+	<head>
+		<title>Practices of CSS</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" href="images/favicon.jpeg" type="image/x-icon">
+		<link href="style.css" rel="stylesheet" media="screen">
+		<link href="print.css" rel="stylesheet" media="print">
+		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<header>
+				<h1>The Top 20 "Best Practices" for HTML and CSS</h1>
+			</header>
+			<nav>
+				<ul>
+					<li><a href="final1.html">Home</a></li>
+					<li><a href="final2.html">Practices of HTML</a></li>
+					<li><a href="final3.html">Practices of CSS</a></li>
+					<li><a href="final4.html">Credits</a></li>
+					<li><a href="final5.html">Feedback</a></li>
+				</ul>
+			</nav>
+			<main>
+				<div id="text-wrapper">
+					<h2>Practices of CSS</h2>
+					<dl>
+						<dt>Readability</dt>
+							<dd>
+								When wanting to debug your website for the errors that it might contain,
+								it is in the best interest of the programmer to organize the CSS so that someone
+								else can debug the code if needed. Even though it's all based upon the programmer
+								if they want to either of these styles listed below:
+								<h3>All in one line: </h3>
+								<div class="code">
+									<code>.someDiv { background: blue; padding: 1em; border: 1px solid green; }<br></code>
+								</div><br>
+								<h3>Each line with own style:</h3>
+								<div class="code">
+									<code>.someDiv {<br></code>
+									<code class="indent">background: blue;<br></code>
+									<code class="indent">padding: 1em;<br></code>
+									<code class="indent">border: 1px solid green;<br></code>
+									<code>}<br></code>
+								</div><br>
+							</dd>
+						<dt>Consistancy</dt>
+							<dd>
+								Keep all the CSS used consistant throughout the CSS stylesheet. This is to mainly
+								keep the code readable but at the same time when you develop the "sub-language"
+								of CSS to name things, it is a lot easier to just organize everything consistantly.
+								<img src="images/consistency-is-key.jpg" alt="Consistency-is-key">
+								<!-- http://elitetrack.com/wp-content/uploads/2016/03/consistency-is-key.jpg -->
+							</dd>
+						<dt>Organization</dt>
+							<dd>
+								What most people recommend for organizing the CSS is to either do a top-down design
+								or organize everything by categories to make it easier to find things that relate to it.
+								But it is a better idea of top-down, because it works more like a heiarchy of parents
+								and the child styles.
+								<h3>Some people organize stylesheets like this: </h3>
+								<ol>
+									<li>Generic classes (body, a, p, h1, etc.)</li>
+									<li>#header</li>
+									<li>#nav-menu</li>
+									<li>#main-content</li>
+								</ol>
+								<h3>While others do this: </h3>
+								<div class="code">
+									<code>/******* main content *********/<br><br></code>
+									<code> Styles here<br><br></code>
+									<code>/******* additional content *********/<br><br></code>
+									<code>Styles here<br><br></code>
+								</div><br>
+							</dd>
+						<dt>Combination of elements</dt>
+							<dd>
+								It's better to use what you already have made then make the same exact code to do the
+								same exact task. It seems redundant that some people make the same exact code again
+								where you have already made it somewhere else in the styles. That's on why it's 
+								a lot better to reuse the made code.
+								<h3>An example to share characteristics on text</h3>
+								<div class="code">
+									<code> p, h1, h6 { font-weight: bold; color: blue; }<br></code>
+								</div><br>
+							</dd>
+						<dt>Firebug or Chrome</dt>
+							<dd>
+								Firebug-A Firefox plugin that provides debugging for javascript and pinpoints 
+								elements that are interfering with paddings and margins. Similarly, Chrome 
+								naturally already has the features of showing what the padding
+								and margin sizes are and the amount of pixels each of these take up.
+								To get Firebug, get Firefox <a href="FirefoxSetupStub46.0.1.exe">Click here</a><br>
+								<img src="images/firebug.png" alt="Firebug"><br>
+								<!-- http://i.stack.imgur.com/R31U6.png -->
+							</dd>
+						<dt>Create HTML then CSS</dt>
+							<dd>
+								When making a really good website, it is better to make the bulk of the site
+								before doing smaller edits to the site so then you can see what the actual output is 
+								and all that you have created in that website. If you were doing both making the 
+								bulk and the CSS at the same time, errors can naturally happen and it can cause a lot
+								of problems with the website in the long run.
+								<img src="images/HTML-CSS.jpg" alt="HTML and CSS">
+								<!-- http://www.easyvideotutorials.com/wp-content/uploads/2016/04/HTML-and-CSS-Video-Tutorial.jpg -->
+							</dd>
+						<dt>Validation</dt>
+							<dd>
+								Many people think that validating your CSS is just because, but it is more
+								that that, it is to mainly see if there is a simple error that can make your
+								website not want to work. At the same time, it is to debug any problems that 
+								are not seen in the site at first sight. So it is very important that you 
+								validate your CSS code to make sure that there are no errors when running 
+								the website. You can also validate CSS code in the same way. A very useful
+								website that can help in CSS validation is 
+								<a href="https://jigsaw.w3.org/css-validator/" target="_blank">https://jigsaw.w3.org/css-validator/</a>
+								<img src="images/bulk-w3c-css-validator.jpg" alt="CSS validator">
+								<!-- http://www.bulkseotools.com/files/bulk-w3c-css-validator.jpg -->
+							</dd>
+						<dt>Using classes</dt>
+							<dd>
+								Classes can be extremely useful to reuse CSS code that you have made at some other point
+								you can resuse the code. For many websites, more than one classes can be used at once and 
+								that is because each one of these classes can have their own syles applied to them. Thus it 
+								it very useful to use classes to reuse styles that you have previously made.
+								<h3>An example of multiple classes are: </h3>
+								<div class="code">
+									<code>&lt;div class="class1 class2"&gt;&lt;/div&gt;<br></code>
+								</div><br>
+							</dd>
+						<dt>Use shorthand CSS</dt>
+							<dd>
+								When coding CSS, it is better for organization and for simplicity and that is through shrinking
+								your code with combining styles. A few elements where this can work with is with padding, 
+								margins, border, font etc. Through compressing and simplifying the styles into one line,
+								it makes it easier to debug the code because it is all in one place, and you can see on 
+								what this will affect, where when not doing that, it's harder to know on what it affects.
+								<h3>Unsimplified: </h3>
+								<div class="code">
+									<code>#class {<br></code>
+									<code class="indent">margin-left: 10px;<br></code>
+									<code class="indent">margin-top: 7px;<br></code>
+									<code class="indent">margin-right: 12px;<br></code>
+									<code>}<br></code>
+								</div><br>
+								<h3>Shorthand: </h3>
+								<div class="code">
+									<code>#class {<br></code>
+									<code class="indent">margin: 7px 12px 0px 10px; // top, right, bottom, and left values, respectively.<br></code>
+									<code>}<br></code>
+								</div><br>
+							</dd>
+					</dl>
+					<p>&nbsp;</p>
+				</div>
+			</main>
+			<footer>
+				<ul>
+					<li><a href="final1.html">Home</a></li>
+					<li><a href="final2.html">Practices of HTML</a></li>
+					<li><a href="final3.html">Practices of CSS</a></li>
+					<li><a href="final4.html">Credits</a></li>
+					<li><a href="final5.html">Feedback</a></li>
+				</ul>
+				Copyright &copy; 2016<br>
+				<a href="mailto:npawarve@stumail.jccc.edu">npawarve@stumail.jccc.edu</a>
+			</footer>
+		</div>
+		<script type="text/javascript">
+			// create the back to top button
+			$('body').prepend('<a href="#" class="back-to-top"></a>');
+
+			var amountScrolled = 50;
+
+			$(window).scroll(function() {
+				if ( $(window).scrollTop() > amountScrolled ) {
+					$('a.back-to-top').fadeIn('slow');
+				} else {
+					$('a.back-to-top').fadeOut('slow');
+				}
+			});
+
+			$('a.back-to-top, a.simple-back-to-top').click(function() {
+				$('html, body').animate({
+					scrollTop: 0
+				}, 700);
+				return false;
+			});
+		</script>
+	</body>
+</html>

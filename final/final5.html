@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!--Narayana Venkobasah Due May 12, 2016 Feedback-->
+<html lang="en">
+	<head>
+		<title>Feedback</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" href="images/favicon.jpeg" type="image/x-icon">
+		<link href="style.css" rel="stylesheet" media="screen">
+		<link href="print.css" rel="stylesheet" media="print">
+		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<style>
+			/* Form styles */
+			form {
+				margin-left: 7%;
+			}
+			form span{
+				color: #FF0000;
+			}
+			fieldset {
+				width: 50%;
+			}
+			textarea {
+				width: 55%;
+			}
+			img {
+				width: 50%;
+				height: 50%;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="wrapper">
+			<header>
+				<h1>The Top 20 "Best Practices" for HTML and CSS</h1>
+			</header>
+			<nav>
+				<ul>
+					<li><a href="final1.html">Home</a></li>
+					<li><a href="final2.html">Practices of HTML</a></li>
+					<li><a href="final3.html">Practices of CSS</a></li>
+					<li><a href="final4.html">Credits</a></li>
+					<li><a href="final5.html">Feedback</a></li>
+				</ul>
+			</nav>
+			<main>
+				<div id="text-wrapper">
+					<h2>Feedback</h2>
+					<img src="images/form.png" alt="Fill out the form">
+					<!--<h2>Feedback</h2>-->
+					<p>Items marked with a <span style="color: #FF0000;">* </span> are required</p>
+					<form action="placeholder.php" method="post">
+						<label for="name">
+							<span>* </span><input type="text" name="name" id="name" placeholder="Name" required="required">
+						</label><br><br>
+						<label for="email">
+							<span>* </span><input type="email" name="email" id="email" placeholder="Email" required="required">
+						</label><br><br>
+						<span>* </span><select name="age" id="age" size="1" required="required">
+							<option value="">Select your age</option>
+							<option value="less than 20">less than 20</option>
+							<option value="20 to 30">20 to 30</option>
+							<option value="30 to 40">30 to 40</option>
+							<option value="40 to 50">40 to 50</option>
+							<option value="50 to 60">50 to 60</option>
+							<option value="60+">60+</option>
+						</select><br><br>
+						<fieldset>
+							<legend>Computer information</legend>
+								Choose the browsers you use: <br>
+								<input type="checkbox" name="browser" id="IEUse" value="IE">
+									Internet Explorer <br>
+								<input type="checkbox" name="browser" id="FirefoxUse" value="Firefox">
+									Firefox <br>
+								<input type="checkbox" name="browser" id="ChromeUse" value="Chrome">
+									Chrome <br>
+								<input type="checkbox" name="browser" id="SafariUse" value="Safari">
+									Safari <br><br>
+									
+								Choose your current browser: <br>
+								<input type="radio" name="curBrowser" id="IE" value="IE">
+									Internet Explorer <br>
+								<input type="radio" name="curBrowser" id="Firefox" value="Firefox">
+									Firefox <br>
+								<input type="radio" name="curBrowser" id="Chrome" value="Chrome">
+									Chrome <br>
+								<input type="radio" name="curBrowser" id="Safari" value="Safari">
+									Safari <br><br>
+							<label for="date">
+								Enter current date:<br>
+								<input type="date" name="date" id="date">
+							</label>
+						</fieldset><br>
+						<span> * </span>Comments on website:<br>
+						<textarea name="comments" id="comments" rows="4" required>
+						</textarea><br><br>
+						<input type="submit" />
+						<input type="reset" />
+					</form>
+					<p>&nbsp;</p>
+				</div>
+			</main>
+			<footer>
+				<ul>
+					<li><a href="final1.html">Home</a></li>
+					<li><a href="final2.html">Practices of HTML</a></li>
+					<li><a href="final3.html">Practices of CSS</a></li>
+					<li><a href="final4.html">Credits</a></li>
+					<li><a href="final5.html">Feedback</a></li>
+				</ul>
+				Copyright &copy; 2016<br>
+				<a href="mailto:npawarve@stumail.jccc.edu">npawarve@stumail.jccc.edu</a>
+			</footer>
+		</div>
+		<script type="text/javascript">
+			// create the back to top button
+			$('body').prepend('<a href="#" class="back-to-top"></a>');
+
+			var amountScrolled = 50;
+
+			$(window).scroll(function() {
+				if ( $(window).scrollTop() > amountScrolled ) {
+					$('a.back-to-top').fadeIn('slow');
+				} else {
+					$('a.back-to-top').fadeOut('slow');
+				}
+			});
+
+			$('a.back-to-top, a.simple-back-to-top').click(function() {
+				$('html, body').animate({
+					scrollTop: 0
+				}, 700);
+				return false;
+			});
+		</script>
+	</body>
+</html>

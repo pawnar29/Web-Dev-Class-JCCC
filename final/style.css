@@ -1,0 +1,217 @@
+/* Narayana Venkobasah Due May 12, 2016 */
+
+/* Overarching Styles */
+body {
+	background-color: #A2A0A0;
+}
+header h1 {
+	text-align: center;
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 2.5em;
+	margin-bottom: 0;
+}
+#wrapper {
+	margin-left: 15%;
+	margin-right: 15%;
+	max-width: 2048px;
+	background-color:  #CCC;
+	color: #000;
+}
+/* Image styles */
+figure {
+	border: 1px solid #000000;
+	padding: 5px;
+}
+img {
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	display: block;
+	width: 80%;
+	height: 80%;
+}
+figcaption {
+	text-align: center;
+}
+/* Navigation styles */
+nav {
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    float: left;
+    width: 15%;
+	height: 100%;
+	background-color:  #CCC;
+	display: block;
+}
+nav ul
+{
+	list-style-type: none;
+	padding-left: 0;
+	font-size: 1.2em;
+}
+nav li {
+	display: list-item;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+nav li a{
+	text-decoration: none;
+	color: #000;
+}
+nav li a:hover {
+	color: #FF0000;
+}
+/* Styles within the Main element */
+#text-wrapper{
+	margin-left: 20%;
+	margin-right: 4%;
+	padding-left: 2%;
+	padding-right: 2%;
+	background-color: #EBEBEB;
+}
+main h2 {
+	font-size: 2em;
+}
+main p {
+	text-indent: 5%;
+}
+main dt {
+	font-size: 1.5em;
+	padding-bottom: 5px;
+}
+h3 {
+	text-decoration: none;
+	font-weight: normal;
+	font-size: 1em;
+}
+.code{
+	width: 50%;
+	margin-left: 5%;
+	padding-left: 5%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #B6B6B6;
+	white-space: nowrap;
+	overflow: auto;
+}
+/* Tables */
+table {
+	margin-left: auto;
+	margin-right: auto;
+}
+table td {
+	padding-right: 1%;
+	padding-left: 1%;
+}
+/*.code code:nth-child(even) {
+	background-color: #CCC;
+}*/
+/* Footer styles */
+footer{
+	background-color: #999;
+	color: #000000;
+	font-size: .60em;
+	font-style: italic;
+	text-align: center;
+	padding: 10px;
+	clear: both;
+}
+footer ul{
+	margin-left: auto;
+	margin-right: auto;
+	list-style-type: none;
+}
+footer ul a:visited{
+	color: #0000FF;
+}
+footer li {
+	display: inline-table;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+/* Misc */
+.red-format {
+	color: #FF0000;
+}
+.indent {
+	padding-left: 5%;
+}
+.indent2 {
+	padding-left: 10%;
+}
+/* Back to top arrow */
+/* Back to top based off of external source:
+	http://html-tuts.com/back-to-top-button-jquery/ */
+a.back-to-top {
+	display: none;
+	width: 120px;
+	height: 120px;
+	text-indent: -9999px;
+	position: fixed;
+	z-index: 999;
+	right: 20px;
+	bottom: 20px;
+	background: url("images/up-arrow-circle-hi.png") no-repeat 100%;
+	/*-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;*/
+}
+/* Mobile Friendly styles */
+@media only screen and (max-width: 64em) {
+	#wrapper {
+		margin-left: 7%;
+		margin-right: 7%;
+	}
+	#text-wrapper{
+		margin-left: 19%;
+		margin-right: 2%;
+		padding-left: 10px;
+		background-color: #EBEBEB;
+	}
+}
+@media only screen and (max-width: 37.5em) {
+	header h1 {
+		font-size: 1.5em;
+	}
+	#wrapper {
+		margin-left: 3%;
+		margin-right: 3%;
+	}
+	nav {
+		margin-left: auto;
+		margin-right: auto;
+		float: none;
+		width: 90%;
+		padding: 2px;
+	}
+	nav ul
+	{
+		font-size: 1em;
+	}
+	nav li {
+		margin: 1%;
+		padding: 2%;
+		text-align: center;
+		box-shadow: 2px 2px 2px #330000;
+		display: inline-block;
+	}
+	main h2 {
+		font-size: 1.25em;
+	}
+	main p {
+	text-indent: 10%;
+	}
+	#text-wrapper{
+		margin-left: 4%;
+		margin-right: 4%;
+		padding-left: 10px;
+	}
+	.code{
+		width: 80%;
+	}
+	table td {
+		font-size: .75em;
+	}
+}

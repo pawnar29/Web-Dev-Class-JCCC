@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!--Narayana Venkobasah Due May 12, 2016 Feedback-->
+<html lang="en">
+	<head>
+		<title>Credits</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" href="images/favicon.jpeg" type="image/x-icon">
+		<link href="style.css" rel="stylesheet" media="screen">
+		<link href="print.css" rel="stylesheet" media="print">
+		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<style>
+			main a:visited{
+				color: #0000FF;
+			}
+			main p {
+				margin: 0;
+				padding: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="wrapper">
+			<header>
+				<h1>The Top 20 "Best Practices" for HTML and CSS</h1>
+			</header>
+			<nav>
+				<ul>
+					<li><a href="final1.html">Home</a></li>
+					<li><a href="final2.html">Practices of HTML</a></li>
+					<li><a href="final3.html">Practices of CSS</a></li>
+					<li><a href="final4.html">Credits</a></li>
+					<li><a href="final5.html">Feedback</a></li>
+				</ul>
+			</nav>
+			<main>
+				<div id="text-wrapper">
+					<h2>Credits</h2>
+					<img src="images/credit.jpg" alt="Credit">
+					<dl>
+					<dt>Information sources</dt>
+					<dd>
+						<a href="http://code.tutsplus.com/tutorials/30-html-best-practices-for-beginners--net-4957" target="_blank">
+							HTML Information</a><br>
+						<a href="http://code.tutsplus.com/tutorials/30-css-best-practices-for-beginners--net-6741" target="_blank">
+							CSS Information</a><br>
+						<a href="http://www.noupe.com/essentials/freebies-tools-templates/the-9-best-free-html-editors-for-web-developers-windows-edition-87540.html" target="_blank">
+							Coding Tools</a><br>
+					</dd>
+					<dt>To get Firebug, get Firefox <a href="FirefoxSetupStub46.0.1.exe">Click here</a></dt>
+					<dt>External site links</dt>
+					<dd>
+						<a href="https://validator.w3.org/" target="_blank">HTML Validator</a><br>
+						<a href="https://jigsaw.w3.org/css-validator/" target="_blank">https://jigsaw.w3.org/css-validator/</a>
+					</dd>
+					<dt>Images</dt>
+					<dd>
+						<a href="http://previews.123rf.com/images/vasilkovv/vasilkovv0812/vasilkovv081200002/4037039-3d-person-and-question-mark-on-white-background-Stock-Photo-questioning.jpg" target="_blank">
+							Home Image</a><br>
+						<a href="https://www.htmlvalidator.com/png/html-validator.png" target="_blank">HTML Validator image</a><br>
+						<a href="http://www.bulkseotools.com/files/bulk-w3c-css-validator.jpg" target="_blank">CSS Validator image</a><br>
+						<a href="http://i.stack.imgur.com/R31U6.png" target="_blank">Firebug Image</a><br>
+						<a href="http://www.noupe.com/wp-content/uploads/2015/01/MCarets1.gif" target="_blank">SynWrite Gif</a><br>
+						<a href="http://elitetrack.com/wp-content/uploads/2016/03/consistency-is-key.jpg" target="_blank">Consistancy image</a><br>
+						<a href="http://www.easyvideotutorials.com/wp-content/uploads/2016/04/HTML-and-CSS-Video-Tutorial.jpg" target="_blank">
+							HTML and CSS image</a><br>
+						<a href="http://orig14.deviantart.net/e174/f/2012/241/3/7/give_credit___free_stamp_by_thy_darkest_hour-d5cv73n.jpg" target="_blank">
+							Credits page image</a><br>
+						<a href="http://sd.keepcalm-o-matic.co.uk/i/keep-calm-and-fill-out-this-form.png" target="_blank">Form image</a><br>
+						<a href="http://www.clker.com/cliparts/8/7/Y/H/W/e/up-arrow-circle-hi.png" target="_blank">Back to top image</a><br>
+						<a href="http://html-tuts.com/back-to-top-button-jquery/" target="_blank">Back to top scrolling help</a><br>
+						<a href="http://pubpages.unh.edu/~jpf1/image8.jpeg" target="_blank">Favi-con image</a><p>&nbsp;</p>
+					</dd>
+				</div>
+			</main>
+			<footer>
+				<ul>
+					<li><a href="final1.html">Home</a></li>
+					<li><a href="final2.html">Practices of HTML</a></li>
+					<li><a href="final3.html">Practices of CSS</a></li>
+					<li><a href="final4.html">Credits</a></li>
+					<li><a href="final5.html">Feedback</a></li>
+				</ul>
+				Copyright &copy; 2016<br>
+				<a href="mailto:npawarve@stumail.jccc.edu">npawarve@stumail.jccc.edu</a>
+			</footer>
+		</div>
+		<script type="text/javascript">
+			// create the back to top button
+			$('body').prepend('<a href="#" class="back-to-top"></a>');
+
+			var amountScrolled = 50;
+
+			$(window).scroll(function() {
+				if ( $(window).scrollTop() > amountScrolled ) {
+					$('a.back-to-top').fadeIn('slow');
+				} else {
+					$('a.back-to-top').fadeOut('slow');
+				}
+			});
+
+			$('a.back-to-top, a.simple-back-to-top').click(function() {
+				$('html, body').animate({
+					scrollTop: 0
+				}, 700);
+				return false;
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<!--Narayana Venkobasah Due May 12, 2016 Practices of HTML-->
+<html lang="en">
+	<head>
+		<title>Practices of HTML</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" href="images/favicon.jpeg" type="image/x-icon">
+		<link href="style.css" rel="stylesheet" media="screen">
+		<link href="print.css" rel="stylesheet" media="print">
+		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<header>
+				<h1>The Top 20 "Best Practices" for HTML and CSS</h1>
+			</header>
+			<nav>
+				<ul>
+					<li><a href="final1.html">Home</a></li>
+					<li><a href="final2.html">Practices of HTML</a></li>
+					<li><a href="final3.html">Practices of CSS</a></li>
+					<li><a href="final4.html">Credits</a></li>
+					<li><a href="final5.html">Feedback</a></li>
+				</ul>
+			</nav>
+			<main>
+				<div id="text-wrapper">
+					<h2>Practices of HTML</h2>
+					<dl>
+						<dt>Closing data tags</dt>
+							<dd>
+								In the old times when html was used, people didn't always close 
+								the data tags in the code. Due to this, it has caused a lot of problems
+								in code verification softwares' and it is because the program thinks that
+								the data is still in that one element.<br>
+								<h3>Example:</h3>
+								<div class="code">
+									<code>&lt;li&gt;Text here<br></code>
+									<code>&lt;li&gt;More text here<br></code>
+									<code>&lt;li&gt;Some more text<br></code>
+								</div><br>
+								<h3>The right way:</h3>
+								<div class="code">
+									<code>&lt;li&gt;Text here&lt;/li&gt;<br></code>
+									<code>&lt;li&gt;More text here&lt;/li&gt;<br></code>
+									<code>&lt;li&gt;Some more text&lt;/li&gt;<br></code>
+								</div><br>
+							</dd>
+						<dt>Never using Inline styles</dt>
+							<dd>
+								Inline styles are useful but you should be doing the styles after you have 
+								finished making the bulk of the website. Through this, there is no 
+								repetition in the code that you are using. Even though it might be tempting
+								to add some inline coding, you will later on be changing that by making a CSS
+								document that holds the CSS that styles the page.<br>
+								<h3>Example:</h3>
+								<div class="code">
+									<code>&lt;p style="color:red;"&gt;<a class="red-format">Some text that will look red</a>&lt;/p&gt;</code>
+								</div><br>
+								<h3>The right way:</h3>
+								<div class="code">
+									<code>&lt;p&gt;<a class="red-format">Some text that will look red</a>&lt;/p&gt;</code><br><br>
+									CSS:<br>
+									<code>#someElement > p {
+											  color: red;
+											}
+									</code>
+								</div><br>
+							</dd>
+						<dt>Where to place external data sheets</dt>
+							<dd>
+								The link lines to the external stylesheet can technically be put anywhere,
+								but as many html specifications say, the CSS stylesheet links have to be 
+								put in the head tag and nowhere else. But on the other hand, the Javascript
+								script file links are to be placed within the end of the body tag.
+								<h3>CSS stylesheet:</h3>
+								<div class="code">
+									<code>&lt;head&gt;</code><br>
+										<code class="indent">&lt;title&gt;Website title&lt;title&gt;</code><br>
+										<code class="indent">&lt;link rel="stylesheet" type="text/css" href="path/to/file.css" /&gt;</code><br>
+										<code class="indent">&lt;link rel="stylesheet" type="text/css" href="path/to/anotherFile.css" /&gt;</code><br>
+									<code>&lt;/head&gt;</code><br>
+								</div>
+								<h3>Javascript script file: </h3>
+								<div class="code">
+											<code class="indent2">&lt;p&gt;Webpage with text&lt;/p&gt;</code><br>
+											<code class="indent2">&lt;script type="text/javascript" src="path/to/file.js"&gt; &lt;/script&gt;</code><br>
+											<code class="indent2">&lt;script type="text/javascript" src="path/to/anotherFile.js"&gt; &lt;/script&gt;</code><br>
+										<code class="indent">&lt;/body&gt;</code><br>
+									<code>&lt;/html&gt;</code><br>
+								</div>
+							</dd>
+						<dt>Validation</dt>
+							<dd>
+								Many people think that validating your HTML is just because, but it is more
+								that that, it is to mainly see if there is a simple error that can make your
+								website not want to work. At the same time, it is to debug any problems that 
+								are not seen in the site at first sight. So it is very important that you 
+								validate your HTML code to make sure that there are no errors when running 
+								the website. You can also validate CSS code in the same way. A very useful
+								website that can help in HTML validation is 
+								<a href="https://validator.w3.org/" target="_blank">https://validator.w3.org/</a>
+								<img src="images/html-validator.png" alt="HTML validator">
+								<!-- https://www.htmlvalidator.com/png/html-validator.png -->
+							</dd>
+						<dt>Firebug or Chrome</dt>
+							<dd>
+								Firebug-A Firefox plugin that provides debugging for javascript and pinpoints 
+								elements that are interfering with paddings and margins. Similarly, Chrome 
+								naturally already has the features of showing what the padding
+								and margin sizes are and the amount of pixels each of these take up.
+								To get Firebug, get Firefox <a href="FirefoxSetupStub46.0.1.exe">Click here</a><br>
+								<img src="images/firebug.png" alt="Firebug"><br>
+								<!-- http://i.stack.imgur.com/R31U6.png -->
+							</dd>
+						<dt>Lowercase Tag Names</dt>
+							<dd>
+								Even though having the tag names being capitalized, it does not matter very 
+								much if they are capitalized or not. All it does, is it hurt's peoples' eyes
+								to look at it do debug. At the same time, it can cause validation errors
+								when validating the HTML.
+								<h3>What not to do:</h3>
+								<div class="code">
+									<code>&lt;DIV&gt;</code><br>
+										<code class="indent">&lt;P&gt;Web page content&lt;/P&gt;</code><br>
+									<code>&lt;/DIV&gt;</code><br>
+								</div>
+								<h3>What to do:</h3>
+								<div class="code">
+									<code>&lt;div&gt;</code><br>
+										<code class="indent">&lt;p&gt;Web page content&lt;/p&gt;</code><br>
+									<code>&lt;/div&gt;</code><br>
+								</div>
+							</dd>
+						<dt>Usage of h1 to h6 tags</dt>
+							<dd>
+								A lot of people who have not done a lot of HTML programming do not use
+								the h1 to h6 tags which are very useful when programming HTML. This is 
+								because the h1 to h6 tags are their own individual tags that can be selected
+								in CSS and they already have a default style to each of them. This is 
+								because the h1 tag is mainly used for the article title where many people
+								don't use it for the article title.
+								<h3>Example:</h3>
+								<div class="code">
+									<code>&lt;h1&gt;Article title&lt;/h1&gt;</code><br>
+									<code>&lt;h6&gt;Piece of information&lt;/h6&gt;</code><br>
+								</div>
+							</dd>
+						<dt>Navigation with Unordered Lists</dt>
+							<dd>
+								When making a navigation bar, it is better to use an unordered list because 
+								in many websites it is possible to make horizontal and vertical navigation
+								bars. When using a unordered list, it is possible to do both at the same
+								time but they will need to have styles placed upon them to make them horizontal
+								or vertical oriented.
+								<h3>What not to do:</h3>
+								<div class="code">
+									<code>&lt;div id="nav"&gt;</code><br>
+										<code class="indent">&lt;a href="page1.html"&gt;Home&lt;/a&gt;</code><br>
+										<code class="indent">&lt;a href="page2.html"&gt;About&lt;/a&gt;</code><br>
+										<code class="indent">&lt;a href="page3.html"&gt;Contact&lt;/a&gt;</code><br>
+									<code>&lt;/div&gt;</code><br>
+								</div>
+								<h3>What to do:</h3>
+								<div class="code">
+									<code>&lt;ul id="nav"&gt;</code><br>
+										<code class="indent">&lt;li&gt;&lt;a href="page1.html"&gt;Home&lt;/a&gt;&lt;/li&gt;</code><br>
+										<code class="indent">&lt;li&gt;&lt;a href="page2.html"&gt;About&lt;/a&gt;&lt;/li&gt;</code><br>
+										<code class="indent">&lt;li&gt;&lt;a href="page3.html"&gt;Contact&lt;/a&gt;&lt;/li&gt;</code><br>
+									<code>&lt;/ul&gt;</code><br>
+								</div>
+							</dd>
+						<dt>Target Internet Explorer</dt>
+							<dd>
+								When using an IE browser that is less than IE 6, you have to import a different stylesheet
+								because not everything that IE 6 supports withholds to the standards to web design. So just
+								in case, put this small snippet of code into your pages to target IE for whichever browser
+								that does not do what you want it to do.
+								<h3>Example:</h3>
+								<div class="code">
+									<code>&lt;!--[if lt IE 7]&gt;</code><br>
+										<code class="indent">&lt;link rel="stylesheet" type="text/css" href="path/to/ie.css" /&gt;</code><br>
+									<code>&lt;![endif]--&gt;</code><br>
+								</div>
+							</dd>
+						<dt>Code editors</dt>
+							<dd>
+								When programming in any programming language, use the best software that suits you, so why not
+								take that same principal with HTML and use the best editor that suits you. There are many different 
+								HTML editors out there and some good ones are:
+								<h3>PC programs rated by developers</h3>
+								<ol>
+									<li>Phase 5</li>
+									<li>Programmer's Notepad</li>
+									<li>SynWrite-I highly recommend this one</li>
+									<li>PlainEdit.NET</li>
+									<li>Notepad++</li>
+									<li>jEdit</li>
+								</ol>
+								<h3>Mac & PC programs rated by developers</h3>
+								<ol>
+									<li>Sublime Text 2 – The Swiss Army Knife</li>
+									<li>Brackets - Part of Adobe Creative Suite</li>
+									<li>Aptana Studio 3</li>
+								</ol>
+								<h3>Example of SynWrite: </h3>
+								<img src="images/MCarets1.gif" alt="SynWrite example">
+								<!-- http://www.noupe.com/wp-content/uploads/2015/01/MCarets1.gif -->
+							</dd>
+						<dt>Alt text on images</dt>
+							<dd>
+								It's extremely easy to forget this one of not putting alternate text in for an image
+								because we always think that the image will always load on every try; but to people who don't have the 
+								best internet connections, it takes forever to get the image loaded-that's on why we have the alt text.
+								<h3>Bad example: </h3>
+								<div class="code">
+									<code>&lt;img src="image.jpg"&gt;</code><br>
+								</div>
+								<h3>Good example: </h3>
+								<div class="code">
+									<code>&lt;img src="image.jpg" alt="Description of image"&gt;</code><br>
+								</div>
+							</dd>
+					</dl>
+					<p>&nbsp;</p>
+				</div>
+				<p><a href="#" class="back-to-top"></a></p>
+			</main>
+			<footer>
+				<ul>
+					<li><a href="final1.html">Home</a></li>
+					<li><a href="final2.html">Practices of HTML</a></li>
+					<li><a href="final3.html">Practices of CSS</a></li>
+					<li><a href="final4.html">Credits</a></li>
+					<li><a href="final5.html">Feedback</a></li>
+				</ul>
+				Copyright &copy; 2016<br>
+				<a href="mailto:npawarve@stumail.jccc.edu">npawarve@stumail.jccc.edu</a>
+			</footer>
+		</div>
+		<script type="text/javascript">
+			// create the back to top button
+			$('body').prepend('<a href="#" class="back-to-top"></a>');
+
+			var amountScrolled = 50;
+
+			$(window).scroll(function() {
+				if ( $(window).scrollTop() > amountScrolled ) {
+					$('a.back-to-top').fadeIn('slow');
+				} else {
+					$('a.back-to-top').fadeOut('slow');
+				}
+			});
+
+			$('a.back-to-top, a.simple-back-to-top').click(function() {
+				$('html, body').animate({
+					scrollTop: 0
+				}, 700);
+				return false;
+			});
+		</script>
+	</body>
+</html>

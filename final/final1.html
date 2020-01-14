@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!--Narayana Venkobasah Due May 12, 2016 Introduction page-->
+<html lang="en">
+	<head>
+		<title>Home</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" href="images/favicon.jpeg" type="image/x-icon">
+		<link href="style.css" rel="stylesheet" media="screen">
+		<link href="print.css" rel="stylesheet" media="print">
+		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<header>
+				<h1>The Top 20 "Best Practices" for HTML and CSS</h1>
+			</header>
+			<nav>
+				<ul>
+					<li><a href="final1.html">Home</a></li>
+					<li><a href="final2.html">Practices of HTML</a></li>
+					<li><a href="final3.html">Practices of CSS</a></li>
+					<li><a href="final4.html">Credits</a></li>
+					<li><a href="final5.html">Feedback</a></li>
+				</ul>
+			</nav>
+			<main>
+				<div id="text-wrapper">
+					<p>&nbsp;</p>
+					<figure>
+						<img src="images/questioning.jpg" alt="Questioning">
+						<figcaption>Question?</figcaption>
+					</figure>
+					<!-- http://previews.123rf.com/images/vasilkovv/vasilkovv0812/vasilkovv081200002/4037039-3d-person-and-question-mark-on-white-background-Stock-Photo-questioning.jpg -->
+					<h2>Best practices?</h2>
+					<p>
+						Making a website is pretty easy, but only if you know the tips and tricks; it will
+						make an effective and organized site that everybody will appeal to. In the many pages 
+						in this webpage, we will give you many different tips and tricks that you can try in 
+						programming HTML and CSS and at the same time, most of these tricks can be used in many 
+						other programming languages.
+					</p>
+					<p>
+						Read through the many pages in this website to learn the most effective and standard 
+						ways on how to structure and effectively organize the website for the easiest accessibility
+						for the user and to make the website look professional. 
+					</p>
+					<h3>This table below displays some of the topics displayed in this website: </h3>
+					<table>
+						<tr>
+							<th>Basics</th>
+							<th>What not to do</th>
+							<th>Helpful hints</th>
+							<th>Tools</th>
+						</tr>
+						<tr>
+							<td>Closing data tags</td>
+							<td>Inline styles</td>
+							<td>Placement of external sheets</td>
+							<td>Coding programs</td>
+						</tr>
+						<tr>
+							<td>Validation</td>
+							<td>Uppercase tag names</td>
+							<td>Placement of external sheets</td>
+							<td>Firebug</td>
+						</tr>
+						<tr>
+							<td>H1 to h6 tags</td>
+							<td>Navigation without unordered list</td>
+							<td>Use unordered lists for navigation</td>
+							<td>Alternate text</td>
+						</tr>
+						<tr>
+							<td>Classes</td>
+							<td>CSS on one line</td>
+							<td>Target Internet Explorer</td>
+							<td>Tabs and orgaization</td>
+						</tr>
+					</table>
+					<p>
+						A simple and effective tip and the ease of this website is that code snippets are embodied in a 
+						box like this one: <br>
+						<div class="code">
+							<code>Code is displayed like this</code>
+						</div>
+					</p>
+					<p>&nbsp;</p>
+				</div>
+			</main>
+			<footer>
+				<ul>
+					<li><a href="final1.html">Home</a></li>
+					<li><a href="final2.html">Practices of HTML</a></li>
+					<li><a href="final3.html">Practices of CSS</a></li>
+					<li><a href="final4.html">Credits</a></li>
+					<li><a href="final5.html">Feedback</a></li>
+				</ul>
+				Copyright &copy; 2016<br>
+				<a href="mailto:npawarve@stumail.jccc.edu">npawarve@stumail.jccc.edu</a>
+			</footer>
+		</div>
+		<script type="text/javascript">
+			// create the back to top button
+			$('body').prepend('<a href="#" class="back-to-top"></a>');
+
+			var amountScrolled = 50;
+
+			$(window).scroll(function() {
+				if ( $(window).scrollTop() > amountScrolled ) {
+					$('a.back-to-top').fadeIn('slow');
+				} else {
+					$('a.back-to-top').fadeOut('slow');
+				}
+			});
+
+			$('a.back-to-top, a.simple-back-to-top').click(function() {
+				$('html, body').animate({
+					scrollTop: 0
+				}, 700);
+				return false;
+			});
+		</script>
+	</body>
+</html>
+<!-- http://pubpages.unh.edu/~jpf1/image8.jpeg -->

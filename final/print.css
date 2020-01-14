@@ -1,0 +1,45 @@
+/* Narayana Venkobasah Due May 12, 2016 */
+
+header {
+	background-color: #FFF;
+	font-size: 1em;
+}
+/* Disablign visiblity of items */
+nav{
+	display: none;
+}
+footer ul {
+	display: none;
+}
+/* Main styles */
+main {
+	font-size: .75em;
+}
+main p {
+	text-indent: 5%;
+}
+.code{
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+/*  Image styles */
+img {
+	width: 15%;
+	height: 15%;
+}
+figcaption {
+	display: none;
+}
+/* Form styles */
+form span{
+	color: #FF0000;
+}
+textarea {
+	width: 50%;
+}
+/* Footer styles */
+footer {
+	font-size: .1em;
+}
